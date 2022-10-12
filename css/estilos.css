@@ -8,19 +8,17 @@
 
 #text1{
     text-align: center;
-    color: rgb(255, 255, 255);
+	font-size: 45px;
+    color: rgb(0, 0, 0);
 
 }
 
-#text2{
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
+
 
 nav{
 	max-width: 900px;
 	margin: auto;
-	background-color: #333;
+	background-color: rgba(0, 0, 0, 0.875);
 	font-size: 20px;
 	margin-top: 50px;
 }
@@ -36,14 +34,14 @@ nav{
 	text-decoration: none;
 }
 .menu-horizontal > li:hover{
-	background-color: red;
+	background-color: rgba(38, 179, 255, 0.903);
 }
 .menu-vertical{
 	position: absolute;
 	display: none;
 	list-style: none;
 	width: 200px;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, 0.88);
 }
 .menu-horizontal li:hover .menu-vertical{
 	display: block;
@@ -64,5 +62,46 @@ nav{
 	padding: 20px;
 	max-width: 900px;
 	background: white;
+
+}
+
+.slider {
+	width: 65.5vw;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+
+	animation: slide 3s infinite alternate ease-in-out;
+}
+
+.slider .slide-track {
+	display: flex;
+	animation: scroll 15s linear infinite;
+	width: cal(200px*1);
+}
+
+.slider .slide {
+	width: 200px; 
+}
+
+.slider .slide img {
+	width: 100%;
+}
+
+@keyframes scroll {
+	0%{
+		-webkit-transform: translatetex(0);
+		transform: translate(0);
+	}
+	100%{
+		-webkit-transform: translateX(calc(-200px * 8));
+		transform: translateX(calc(-200px * 8));
+	}
+}
+
+/* ESTILO INDEX COMPUTADORES */
+
+#catalogo, #newtech, #contacto{
+	color: rgb(255, 255, 255);
 
 }
